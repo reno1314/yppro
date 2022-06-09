@@ -52,7 +52,7 @@ beikong0_chushihua(){
     sed -i "/vnstat -u -i eth0/d" "$file_1/crontab.bak"
     sed -i "/vnstat.sh/d" "$file_1/crontab.bak"
     echo -e "\n*/1 * * * *  /usr/bin$file_1/vnstat -u -i eth0" >> "$file_1/crontab.bak"
-    echo -e "\n0 2 1 * *  /root/.awsll$file_1/vnstat.sh" >> "$file_1/crontab.bak"
+    echo -e "\n0 12 1 * *  /root/.awsll$file_1/vnstat.sh" >> "$file_1/crontab.bak"
     crontab "$file_1/crontab.bak"
     rm -r "$file_1/crontab.bak"
     cron_config=$(crontab -l | grep "vnstat -u -i eth0")
@@ -104,7 +104,7 @@ beikong1_chushihua(){
     sed -i "/vnstat -u -i eth0/d" "$file_1/crontab.bak"
     sed -i "/vnstat.sh/d" "$file_1/crontab.bak"
     echo -e "\n*/1 * * * *  /usr/bin$file_1/vnstat -u -i eth0" >> "$file_1/crontab.bak"
-    echo -e "\n0 2 1 * *  /root/.awsll$file_1/vnstat.sh" >> "$file_1/crontab.bak"
+    echo -e "\n0 12 1 * *  /root/.awsll$file_1/vnstat.sh" >> "$file_1/crontab.bak"
     crontab "$file_1/crontab.bak"
     rm -r "$file_1/crontab.bak"
     cron_config=$(crontab -l | grep "vnstat -u -i eth0")
@@ -155,7 +155,7 @@ beikong2_chushihua(){
     sed -i "/vnstat -u -i eth0/d" "$file_1/crontab.bak"
     sed -i "/vnstat.sh/d" "$file_1/crontab.bak"
     echo -e "\n*/1 * * * *  /usr/bin$file_1/vnstat -u -i eth0" >> "$file_1/crontab.bak"
-    echo -e "\n0 2 1 * *  /root/.awsll$file_1/vnstat.sh" >> "$file_1/crontab.bak"
+    echo -e "\n0 12 1 * *  /root/.awsll$file_1/vnstat.sh" >> "$file_1/crontab.bak"
     crontab "$file_1/crontab.bak"
     rm -r "$file_1/crontab.bak"
     cron_config=$(crontab -l | grep "vnstat -u -i eth0")
