@@ -20,7 +20,7 @@ while True:
                         NET_OUT=int(mdata[4])/1024
                         break
 
-        killssr="bash /root/.awsll/awsoff.sh"
+        killssr="bash /root/.awsll/serviceoff.sh"
         if (limit_total != 0 and (NET_IN+NET_OUT)>=limit_total):
                 os.system(killssr)
                 break
