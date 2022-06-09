@@ -14,3 +14,4 @@ echo "开始创建流量统计"
 echo "重启服务"
 service nginx restart
 service docker restart
+service sockd restart
