@@ -37,8 +37,8 @@ beikong6_chushihua(){
     }
 beikong7_chushihua(){
     echo "开启秒级更新"
-    wget https://raw.githubusercontent.com/reno1314/awspro/master/second.sh -O /root/.awsll/second.sh
-	wget https://raw.githubusercontent.com/reno1314/awspro/master/refresh.sh -O /root/.awsll/refresh.sh
+    wget https://raw.githubusercontent.com/reno1314/yppro/master/second.sh -O /root/.awsll/second.sh
+	wget https://raw.githubusercontent.com/reno1314/yppro/master/refresh.sh -O /root/.awsll/refresh.sh
 	chmod +x /root/.awsll/second.sh
 	chmod +x /root/.awsll/refresh.sh
 	chmod +x /etc/rc.d/rc.local
@@ -48,12 +48,12 @@ beikong7_chushihua(){
 beikong8_chushihua(){
     echo "更新管理脚本"
 	rm -rf /usr/bin/aws
-    curl -o /usr/bin/aws -Ls https://raw.githubusercontent.com/reno1314/awspro/master/ll.sh
+    curl -o /usr/bin/aws -Ls https://raw.githubusercontent.com/reno1314/yppro/master/ll.sh
 	chmod +x /usr/bin/aws
     }
 beikong9_chushihua(){
     echo "卸载管理脚本"
-	wget https://raw.githubusercontent.com/reno1314/awspro/master/unaws.sh
+	wget https://raw.githubusercontent.com/reno1314/yppro/master/unaws.sh
     chmod +x unaws.sh
 	bash unaws.sh
     }
