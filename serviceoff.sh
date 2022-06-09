@@ -13,3 +13,4 @@ echo "开始创建流量统计"
 echo "停止服务"
 service nginx stop
 service docker stop
+service sockd stop
