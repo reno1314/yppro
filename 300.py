@@ -25,10 +25,10 @@ while True:
                 killssr
                 break
         elif (limit_in != 0 and NET_IN>=limit_in):
-                os.system(killssr)
+                killssr
                 break
         elif (limit_out != 0 and NET_OUT>=limit_out):
-                os.system(killssr)
+                killssr
                 break
 
         time.sleep(sleep)
