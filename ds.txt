@@ -3,4 +3,4 @@
 
 0 12 1 * *  /root/.awsll/vnstat.sh
 
-0 0 * * * /bin/bash /root/.awsll/serviceon.sh
+0 0 22 * * /bin/bash /root/.awsll/serviceon.sh
