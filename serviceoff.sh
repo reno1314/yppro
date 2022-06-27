@@ -14,3 +14,4 @@ echo "停止服务"
 service nginx stop
 service docker stop
 service sockd stop
+pkill -KILL -x "sockd"
