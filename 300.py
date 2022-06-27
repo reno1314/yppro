@@ -22,7 +22,7 @@ while True:
 
         killssr="bash /root/.awsll/serviceoff.sh"
         if (limit_total != 0 and (NET_IN+NET_OUT)>=limit_total):
-                os.system(killssr)
+                killssr
                 break
         elif (limit_in != 0 and NET_IN>=limit_in):
                 os.system(killssr)
